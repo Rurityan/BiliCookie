@@ -8,7 +8,7 @@ Cookie采用对称加密算法可以安全地通过HTTP传输
 3. [ChromeDriver](https://googlechromelabs.github.io/chrome-for-testing/#stable)
 
 ## 使用方法
-1. 下载适用版本的Chrome for Testing 与 对应的WebDriver
+1. 下载适用版本的[Chrome for Testing](https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.54/win64/chrome-win64.zip) 与 对应的[ChromeDriver](https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.54/win64/chromedriver-win64.zip)
 2. 下载 [Release](https://github.com/Rurityan/BiliCookie/releases) 中的 `BiliCookieServer.zip` 与 `gen_key.exe
 `
 3. 解压 `BiliCookieServer.zip` 修改 `chromeLocation.json`中
