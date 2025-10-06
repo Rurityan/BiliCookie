@@ -20,10 +20,25 @@ Cookie采用对称加密算法可以安全地通过HTTP传输
 7. 扫码登录完成后即可关闭，修改 `bili_config.json`中的`headless`为`true`启用无头模式(节省资源)
 
 ## 环境
-
 Python 3.10
 
-## 二次开发
+## 获取Cookie
+`pip install requests`
+`pip install cryptography`
+```
+# bili_cookie_url 为 服务端配置的地址
+# bili_cookie_key 为 服务器配置的密钥
+
+import requests
+import cryptography.fernet
+
+x = requests.get(url=bili_cookie_url, timeout=5.0).json()
+encrypted_str: str = x['encrypted_cookie']
+cipher_suite = cryptography.fernet.Fernet(bili_cookie_key)
+decrypted_data = cipher_suite.decrypt(encrypted_str).decode('utf-8')
+```
+
+## 开发
 ```bash
 # 克隆仓库
 git clone https://github.com/Rurityan/BiliCookie.git
