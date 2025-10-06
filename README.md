@@ -27,10 +27,13 @@ Python 3.10
 `pip install cryptography`
 ```
 # bili_cookie_url 为 服务端配置的地址
-# bili_cookie_key 为 服务器配置的密钥
+# bili_cookie_key 为 服务端配置的密钥
 
 import requests
 import cryptography.fernet
+
+# bili_cookie_url = "http://{server_ip}:{server_port}/getbilibilicookie"
+# bili_cookie_key = "bili_config 中 key 的值"
 
 x = requests.get(url=bili_cookie_url, timeout=5.0).json()
 encrypted_str: str = x['encrypted_cookie']
