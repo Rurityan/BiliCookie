@@ -1,5 +1,5 @@
 # BiliCookie
-采用HTTP服务端定期刷新BiliBili已登入账号的Cookie，避免使用第三方程序调用API时SESSDATA失效问题；
+采用HTTP服务端定期刷新BiliBili已登入账号的Cookie，避免使用第三方程序调用API时出现SESSDATA失效问题；
 Cookie采用对称加密算法可以安全地通过HTTP传输
 
 ## 依赖
