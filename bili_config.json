@@ -1,0 +1,9 @@
+{
+  "name": "月下的永远",
+  "dir": "Firefly",
+  "target_url": "https://account.bilibili.com/account/home",
+  "headless": false,
+  "key": "665x14lx-EkAURiIw81kj0qotmGFmrq4gS75aMpAqeY=",
+  "ipAddr": "0.0.0.0",
+  "port": 13678
+}
