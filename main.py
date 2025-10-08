@@ -89,9 +89,7 @@ if __name__ == "__main__":
     server_port = int(instance_cfg['port'])
 
     with http.server.ThreadingHTTPServer((IPAddr, server_port), MyHandler) as httpd:
-        print(f"HTTP Server Started. http://{IPAddr}:{server_port}/getbilibilicookie")
+        print(f"Serving BiliBili Cookie Service on http://{IPAddr}:{server_port}/getbilibilicookie")
         httpd.timeout = 5.0
         httpd.serve_forever()
-
-    print(f"Serving BiliBili Cookie Service on port {server_port}")
-    httpd.serve_forever()
+    
