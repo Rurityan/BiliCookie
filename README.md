@@ -2,6 +2,10 @@
 采用HTTP服务端定期刷新BiliBili已登入账号的Cookie，避免使用第三方程序调用API时出现SESSDATA失效问题；
 Cookie采用对称加密算法可以安全地通过HTTP传输
 
+## 特性
+1. 定期刷新登入账号的Cookie(默认3天), 保证客户端每次获取的Cookie中的SESSDATA字段都是有效的(疑似7天有效期？)。
+2. 使用Fernet AES 128 位对称加密，确保Cookies可以安全地通过HTTP传输 (SSL证书并非总是必要选项)。
+
 ## 依赖
 1. `Chrome for Testing` 与 `ChromeDriver` 版本需要对应
 2. [Chrome for Testing](https://googlechromelabs.github.io/chrome-for-testing/#stable)
