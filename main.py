@@ -81,7 +81,7 @@ if __name__ == "__main__":
     instance = bili_browser_module.Browser(port_number=bili_browser_module.auto_port_select(), user_data_dir=instance_cfg['location'],
                                            target_url=instance_cfg['target_url'], headless=instance_cfg["headless"])
     instance.browser_start()
-    print("waiting initializing...")
+    print("Initializing...")
     time.sleep(15)
     refresh_page_threading(instance)
 
