@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BiliCookie 登录管理</title>
+<main>
+  <h1>BiliCookie 登录管理</h1>
+  <p>使用哔哩哔哩手机客户端扫码，并在手机上确认登录。</p>
+  <button id="generate">生成登录二维码</button>
+  <button id="check">检查登录及续期</button>
+  <p id="message" role="status"></p>
+  <img id="qr" width="280" height="280" alt="登录二维码" hidden>
+  <pre id="status"></pre>
+</main>
+<script src="/login.js" defer></script>
+</html>
