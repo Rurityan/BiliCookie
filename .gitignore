@@ -201,6 +201,10 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
+# Encrypted login credentials and temporary atomic writes
+*.enc
+*.enc.tmp
+
 # Marimo
 marimo/_static/
 marimo/_lsp/
